@@ -1,0 +1,33 @@
+{
+  "name": "webpack-review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zf1517/webpack-review.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zf1517/webpack-review/issues"
+  },
+  "homepage": "https://github.com/zf1517/webpack-review#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/runtime-corejs3": "^7.10.2",
+    "core-js": "^3.6.5"
+  }
+}
