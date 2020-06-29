@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + chunkId + ".bundle.js"
+/******/ 		return __webpack_require__.p + "" + ({"2":"dynamic"}[chunkId]||chunkId) + "-" + {"2":"9030db02"}[chunkId] + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -2835,7 +2835,7 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 var style = __webpack_require__(81);
 
 // CONCATENATED MODULE: ./src/test2.jpg
-/* harmony default export */ var test2 = (__webpack_require__.p + "7ba934a656433713ce4af7bf48494a33.jpg");
+/* harmony default export */ var test2 = (__webpack_require__.p + "test2_7ba934a6.jpg");
 // CONCATENATED MODULE: ./src/tree-shaking.js
 function a() {
   return 'this is a';
@@ -2854,7 +2854,7 @@ console.log(react_default.a.Children);
 
 function component() {
   a();
-  __webpack_require__.e(/* import() | aaa */ 2).then(__webpack_require__.bind(null, 85)).then(function (f) {
+  __webpack_require__.e(/* import() | dynamic */ 2).then(__webpack_require__.bind(null, 85)).then(function (f) {
     console.log(f.default);
   });
   var element = document.createElement('div');
@@ -2870,4 +2870,4 @@ document.body.appendChild(component());
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=main-40c4302d.js.map
