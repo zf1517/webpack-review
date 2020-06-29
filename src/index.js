@@ -6,6 +6,7 @@ function component(){
     element.innerHTML = 'hello css1';
     element.classList.add('hello');
     const myIcon = new Image();
+    console.log(a)
     myIcon.src = Icon;
     element.appendChild(myIcon);
     return element;
