@@ -1,21 +1,15 @@
-const { resolve } = require("core-js/fn/promise");
+import './style.css';
+import Icon from './test2.jpg';
 
-let array = [1,2,3,4,5,6];
-array.includes(function(item){
-    return item>2;
-})
-console.log(111)
-class Robot {
-    constructor (msg) {
-        this.message = msg
-    }
-    say () {
-        alertMe(this.message)
-    }
+function component(){
+    const element = document.createElement('div');
+    element.innerHTML = 'hello css1';
+    element.classList.add('hello');
+    const myIcon = new Image();
+    myIcon.src = Icon;
+    element.appendChild(myIcon);
+    return element;
 }
-Object.assign({},{
-    a:1,b:2
-})
-const fn = () => 1;
+document.body.appendChild(component());
 
 
